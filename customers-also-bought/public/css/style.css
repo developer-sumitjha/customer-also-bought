@@ -1,0 +1,79 @@
+.cab-related-products .slick-slide {
+    margin-right: 24px;
+}
+.cab-related-products .img-cont {
+    background: #f5f5f5;
+    min-height: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+.cab-related-products .img-cont img{
+    transition: all 0.2s ease-in;
+}
+.cab-related-products .img-cont img:hover{
+    transform: scale(1.2);
+}
+.cab-related-products h4{
+    color: #111111;
+    font-family: "CabinetGrotesk", Sans-serif;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 36px;
+    margin-top: 24px;
+    margin-bottom: 0px;
+}
+.cab-related-products .price, .cab-related-products .price del, .cab-related-products .price ins{
+    color: #444444;
+    font-family: "CabinetGrotesk", Sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+}
+.cab-related-products .slick-dots li button:before {
+    display: none;
+}
+.cab-related-products ul.slick-dots {
+    position: absolute;
+    bottom: -56px;
+}
+.cab-related-products ul.slick-dots .slick-active button {
+    width: 28px;
+    height: 8px;
+    border-radius: 12px;
+    margin: 0px;
+}
+.cab-related-products ul.slick-dots .slick-active button:hover{
+    width: 28px;
+    height: 8px;
+    border-radius: 12px;
+}
+.cab-related-products ul.slick-dots li button {
+    width: 8px;
+    height: 8px;
+    border-radius: 12px;
+    margin: 0px;
+}
+.cab-related-products ul.slick-dots li{
+    margin: 0px;
+}
+.cab-related-products ul.slick-dots li {
+    margin: 0px;
+    width: auto;
+}
+.cab-related-products ul.slick-dots {
+    position: absolute;
+    bottom: -56px;
+    display: flex;
+    justify-content: center;
+    gap: 12px;
+}
+.cab-carousel-item a:focus{
+    outline: none;
+}
+/* Tablet View Responsive CSS */
+@media only screen and (max-width: 1024px) {
+    .cab-related-products .slick-slide{
+        margin-right: 20px;
+    }
+}
