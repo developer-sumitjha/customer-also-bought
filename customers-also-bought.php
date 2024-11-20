@@ -3,7 +3,8 @@
 Plugin Name: Customers Also Bought Woocommerce Plugin
 Description: Displays a section of products that customers also bought when viewing a product.
 Version: 1.0
-Author: Intopros Technology
+Author: Sumit Jha
+Author URI: http://sumitjha.info.np/
 */
 
 // Prevent direct access to the file
