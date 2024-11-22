@@ -50,12 +50,17 @@ function cab_customers_also_bought_shortcode() {
 
     if (!empty($related_products)) {
         $output .= '<div class="cab-customers-also-bought">';
+		$output .= '<h1>Customer Also Bought</h1>';
         $output .= '<div class="cab-related-products">'; // Changed <ul> to <div> for Slick Carousel compatibility
 
         foreach ($related_products as $related_product_id) {
             $related_product = wc_get_product($related_product_id);
             if ($related_product) {
                 $output .= '<div class="cab-carousel-item">'; // Changed <li> to <div>
+				// Check if the product is on sale
+                if ($related_product->is_on_sale()) {
+                    $output .= '<span class="sale-badge">Sale!</span>'; // Add Sale badge
+                }
                 $output .= '<a href="' . get_permalink($related_product->get_id()) . '">';
                 $output .= '<div class="img-cont">' . $related_product->get_image() . '</div>';
                 $output .= '<h4>' . $related_product->get_name() . '</h4>';

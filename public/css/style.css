@@ -1,3 +1,11 @@
+.cab-customers-also-bought h1 {
+    text-align: center;
+    font-family: 'CabinetGrotesk';
+    font-size: 36px;
+    font-weight: 500;
+    color: #000;
+    margin-bottom: 64px;
+}
 .cab-related-products .slick-slide {
     margin-right: 24px;
 }
@@ -70,6 +78,20 @@
 }
 .cab-carousel-item a:focus{
     outline: none;
+}
+.sale-badge {
+    width: 48px;
+    height: 24px;
+    background-color: #135BA4;
+    color: white;
+    font-family: 'CabinetGrotesk';
+    font-size: 12px;
+    font-weight: 500;
+    position: absolute;
+    top: 8px;
+    text-align: center;
+    margin-left: 8px;
+	z-index: 9;
 }
 /* Tablet View Responsive CSS */
 @media only screen and (max-width: 1024px) {
